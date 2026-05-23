@@ -11,7 +11,7 @@ Aplicação web desenvolvida com HTML, CSS e JavaScript puro que permite convert
 
 ## 📸 Preview
 
-> ![Preview do Conversor de Moeda](./pagina.png)
+> ![Preview do Conversor de Moeda](./assets/pagina.png)
 
 ---
 
