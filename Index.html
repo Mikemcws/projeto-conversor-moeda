@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Conversor de Moeda</title>
+</head>
+
+<body>
+
+    <div class="converter-container">
+        
+        <img src="./assets/logo.png" alt="Logo do Conversor de Moeda" class="logo">
+
+        <main>
+            <form id="currency-form">
+                
+                <div class="input-group">
+                    <label for="from-currency">Converter de</label>
+                    <select id="from-currency" name="from-currency" required>
+                        <option value="BRL">R$ Real brasileiro</option>
+                        <option value="USD">US$ Dólar americano</option>
+                        <option value="EUR">€ Euro</option>
+                        <option value="GBP">£ Libra</option>
+                        <option value="BTC">₿ Bitcoin</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="to-currency">Converter para</label>
+                    <select id="to-currency" name="to-currency" required>
+                        <option value="USD">US$ Dólar americano</option>
+                        <option value="BRL">R$ Real brasileiro</option>
+                        <option value="EUR">€ Euro</option>
+                        <option value="GBP">£ Libra</option>
+                        <option value="BTC">₿ Bitcoin</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="amount">Valor</label>
+                    <input type="number" id="amount" name="amount" required placeholder="R$ 10.000,00">
+                </div>
+
+                <button type="submit" class="convert-button">Converter</button>
+            </form>
+
+            <div class="result-card">
+                
+                <div class="currency-box">
+                    <img src="./assets/real.png" alt="Bandeira Origem" id="img-from" class="currency-flag">
+                    <p class="currency-name" id="name-from">Real</p>
+                    <p class="currency-value" id="value-from">R$ 0,00</p>
+                </div>
+                
+                <div class="arrow-box">
+                    <img src="./assets/seta.png" alt="Seta indicadora" class="arrow-down">
+                </div>
+                
+                <div class="currency-box">
+                    <img src="./assets/dolar.png" alt="Bandeira Destino" id="img-to" class="currency-flag">
+                    <p class="currency-name" id="name-to">Dólar Americano</p>
+                    <p class="currency-value" id="value-to">US$ 0,00</p>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
